@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Room homepage</title>
+</head>
+<body>
+  <header>
+    <div class="overlay"></div>
+
+    <button type="button" onclick="toggleMenuOpen()">
+      <img src="./images/icon-hamburger.svg" alt="open" class="toggle-icon">
+    </button>
+
+    <img src="./images/logo.svg" alt="logo" class="logo">
+
+    <nav>
+      <button type="button" onclick="toggleMenuOpen()">
+        <img src="./images/icon-close.svg" alt="toggle button" class="toggle-icon">
+      </button>
+
+      <ul class="menu">
+        <li><a class="option" href="#">Home</a></li>
+        <li><a class="option" href="#">Shop</a></li>
+        <li><a class="option" href="#">About</a></li>
+        <li><a class="option" href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="primary">
+      <div class="main_images">
+        <div class="image_layout">
+          <div class="images_container">
+            <picture>
+              <source srcset="./images/desktop-image-hero-1.jpg" media="(min-width: 375px)">
+              <img src="./images/mobile-image-hero-1.jpg" alt="main image" class="image">
+            </picture>
+
+            <picture>
+              <source srcset="./images/desktop-image-hero-2.jpg" media="(min-width: 375px)">
+              <img src="./images/mobile-image-hero-2.jpg" alt="main image" class="image">
+            </picture>
+
+            <picture>
+              <source srcset="./images/desktop-image-hero-3.jpg" media="(min-width: 375px)">
+              <img src="./images/mobile-image-hero-3.jpg" alt="main image" class="image">
+            </picture>
+          </div>
+        </div>
+
+        <div class="change_content_nav">
+          <button id="previousBtn" class="change_content_btn">
+            <img src="./images/icon-angle-left.svg" alt="previous">
+          </button>
+          <button id="nextBtn" class="change_content_btn">
+            <img src="./images/icon-angle-right.svg" alt="next">
+          </button>
+        </div>
+      </div>
+
+      <div class="main_info">
+          <div class="info_layout">
+            <div class="info_container">
+              <h1>Discover innovative ways to decorate</h1>
+              <p>We provide unmatched quality, comfort, and style for property owners across the country. 
+                Our experts combine form and function in bringing your vision to life. Create a room in your 
+                own style with our collection and make your property a reflection of you and what you love.</p>
+              <button type="button">
+                Shop now <img src="./images/icon-arrow.svg" alt="⟶" class="shoppingBtn">
+              </button>
+            </div>
+
+            <div class="info_container">
+              <h1>We are available all across the globe</h1>
+              <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+                Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+                store locator. Any questions? Don't hesitate to contact us today.</p>
+              <button type="button">
+                Shop now <img src="./images/icon-arrow.svg" alt="⟶" class="shoppingBtn">
+              </button>
+            </div>  
+            
+            <div class="info_container">
+              <h1>Manufactured with the best materials</h1>
+              <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+                to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+                experience in this industry, we understand what customers want for their home and office.</p>
+              <button type="button">
+                Shop now <img src="./images/icon-arrow.svg" alt="⟶" class="shoppingBtn">
+              </button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="secondary">
+
+      <img src="./images/image-about-dark.jpg" alt="image-about-dark" class="dark_image">
+
+      <article>
+        <h2>About our furniture</h2>
+        <p>Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.</p>
+      </article>
+
+      <img src="./images/image-about-light.jpg" alt="image-about-light" class="light_image">
+
+    </section>
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
